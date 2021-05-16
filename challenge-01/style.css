@@ -28,11 +28,12 @@ body {
 .container {
   background: #23424a;
   color: white;
+  padding: 5rem 5rem 15rem 5rem;
 
   width: 80%;
+  /* Limitando a largura para que o elemento n cresça infinitamente com a tela */
+  max-width: 750px;
   margin: 0 auto;
-
-  padding: 2em;
 }
 
 .intro-content {

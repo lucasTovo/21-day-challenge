@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+}
+/* Valor de referencia para REMs */
+/* :root{
+  font-size: 62.5%; = 10px
+} */
+/* OU */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 auto;
+  background: #222;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  padding: 8rem;
+}
+.inner-content-border-wrap {
+  width: 70%;
+  padding: 1rem;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, yellow, red);
+}
+.inner-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  background: #222;
+  border: 1px solid black;
+}
+.h1 {
+  text-align: center;
+  font-size: 6.4rem;
+  margin-bottom: 2rem;
+}
+.h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.line {
+  width: 60%;
+  margin: 0 auto;
+  display: inline-block;
+  border: 0.5px solid #fff;
+  background-color: red;
+}
+.units {
+  display: flex;
+  justify-content: space-evenly;
+}
+.col {
+  width: 45%;
+  padding: 2rem;
+  text-align: justify;
+}
+.paragraph {
+  margin-bottom: 1rem;
+}
+
+/* COLUNA EM */
+.col--em {
+  font-size: 10px; /* Valor de referncia para EM dentro dessa coluna */
+}
+.col--em .h2 {
+  font-size: 2.6em;
+}
+.col--em .paragraph {
+  font-size: 1.8em;
+}
+
+/* COLUNA REM */
+/* Valor de referencia para REMs */
+/* :root{
+  font-size: 62.5%; = 10px
+} */
+/* OU */
+html {
+  font-size: 62.5%;
+}
+.col--rem .h2 {
+  font-size: 2.6rem;
+}
+.col--rem .paragraph {
+  font-size: 1.8rem;
+}
+
+.buttons-container {
+  width: 70%;
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10rem;
+  background: linear-gradient(to bottom right, yellow, red);
+  font-size: 16px;
+}
+.buttons-container .h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.4em;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  /* O valor de peddings e margins EM se referenciam a font-size do proprio elemento */
+  padding: 1em 3em;
+
+  margin: 1rem;
+}
+.btn-01 {
+  font-size: 1em;
+}
+.btn-02 {
+  font-size: 1.5em;
+}
+.btn-03 {
+  font-size: 2em;
+}

@@ -1,0 +1,96 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark-green: #23424a;
+  --color-green: #136c72;
+  --color-purple: #87629a;
+  --color-brown: #3a3a3a;
+  --color-turquoise: #38cfd9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.c-color-white {
+  color: var(--color-white);
+}
+
+.c-color-brown {
+  color: var(--color-brown);
+}
+
+.c-color-purple {
+  color: var(--color-purple);
+}
+
+.b-color-dark-green {
+  background: var(--color-dark-green);
+}
+
+.b-color-green {
+  background: var(--color-green);
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero__text {
+  width: 60%;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-green);
+  font-weight: 900;
+  background-color: var(--color-turquoise);
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-item {
+  text-align: center;
+}
+
+.flex-item + .flex-item {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .display-flex {
+    flex-direction: column;
+  }
+}

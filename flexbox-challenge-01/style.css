@@ -81,11 +81,21 @@ h1 {
   display: flex;
 }
 
-.flex-item {
+.two-col {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.three-col {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.col {
   text-align: center;
 }
 
-.flex-item + .flex-item {
+.col + .col {
   margin-left: 10px;
 }
 

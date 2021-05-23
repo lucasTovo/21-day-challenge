@@ -1,0 +1,125 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+:root {
+  --color-white: #ffffff;
+  --color-dark-green: #23424a;
+  --color-green: #136c72;
+  --color-purple: #87629a;
+  --color-eclipse: #3a3a3a;
+  --color-turquoise: #38cfd9;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  /* display: flex => flex container */
+  display: flex;
+  justify-content: space-between;
+
+  /* can't use yet */
+  /* gap: 100px; */
+}
+
+.col {
+  /* these are now flex items */
+  width: 100%;
+}
+
+.col + .col {
+  margin-left: 30px;
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+}
+
+.hero__text {
+  width: 62%;
+}
+
+.hero__img {
+  width: 32%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color-dark-green);
+  font-weight: 900;
+  background-color: var(--color-turquoise);
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+.main {
+  padding: 3em 0;
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.primary-content {
+  padding: 2em 0;
+  width: 62%;
+  color: var(--color-eclipse);
+}
+.primary-content h2 {
+  color: var(--color-green);
+}
+
+.sidebar {
+  width: 32%;
+  padding: 2em;
+  color: #fff;
+  background: var(--color-green);
+  text-align: center;
+}

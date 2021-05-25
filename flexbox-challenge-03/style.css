@@ -75,7 +75,11 @@ h1 {
   padding: 0.2em 0;
   list-style: none;
 
+  display: flex;
   align-items: center;
+}
+.nav__item + .nav__item {
+  margin-left: 1em;
 }
 .nav__link {
   color: var(--color-white);

@@ -69,7 +69,10 @@ h1 {
   background: var(--color-green);
   padding: 0.5em 0;
 }
-
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
 .nav__list {
   margin: 0;
   padding: 0.2em 0;

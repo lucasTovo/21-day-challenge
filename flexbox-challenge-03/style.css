@@ -70,7 +70,7 @@ h1 {
   padding: 0.5em 0;
 }
 .logo{
-  margin-right: 1em;
+  /* margin-right: 1em; */
 }
 .nav {
   display: flex;
@@ -85,6 +85,9 @@ h1 {
   display: flex;
   align-items: center;
   font-size: .9rem;
+}
+.nav__list--primary{
+  margin: 0 auto;
 }
 .nav__item + .nav__item {
   margin-left: 1em;

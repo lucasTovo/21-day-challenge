@@ -69,14 +69,25 @@ h1 {
   background: var(--color-green);
   padding: 0.5em 0;
 }
-
+.logo{
+  /* margin-right: 1em; */
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
 .nav__list {
   margin: 0;
-  padding: 0.2em 0;
+  padding: 0;
   list-style: none;
 
   display: flex;
   align-items: center;
+  font-size: .9rem;
+}
+.nav__list--primary{
+  margin: 0 auto;
 }
 .nav__item + .nav__item {
   margin-left: 1em;
@@ -85,9 +96,6 @@ h1 {
   color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
-
-  display: flex;
-  align-items: center;
 }
 .nav__link--button {
   background: var(--color-white);
@@ -117,41 +125,6 @@ h1 {
 
 .section-title {
   color: var(--color-purple);
-}
-
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--color-dark-green);
-  font-weight: 900;
-  background-color: var(--color-turquoise);
-  padding: 0.75em 2em;
-  border-radius: 100px;
-}
-.btn:hover,
-.btn:focus {
-  opacity: 0.75;
-}
-
-.container {
-  width: 80%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.col {
-  /* these are now flex items */
-  width: 100%;
-}
-
-.col + .col {
-  margin-left: 30px;
 }
 
 .main {
